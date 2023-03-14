@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Recipes App</string>
+    <string name="recipe_search_label">Search recipe…</string>
+    <string name="recipe_list_top_bar_title">Recipe List</string>
+    <string name="recipe_detail_top_bar_title">Recipe Detail</string>
+    <string name="recipe_location_top_bar_title">Recipe Location</string>
+    <string name="general_error_message">Something went wrong</string>
+    <string name="retry_button_text">Retry</string>
+    <string name="empty_state_message_title">We did not find recipes</string>
+    <string name="empty_state_message_description">Check that the word is spelled correctly.</string>
+    <string name="location_button_text">See location</string>
+    <string name="description_text">Description</string>
+    <string name="ingredients_text">Ingredients</string>
+    <string name="preparation_text">Preparation</string>
+</resources>

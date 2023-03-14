@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recetas App</string>
+    <string name="recipe_search_label">Buscar receta…</string>
+    <string name="recipe_list_top_bar_title">Listado de recetas</string>
+    <string name="recipe_detail_top_bar_title">Detalle Receta</string>
+    <string name="recipe_location_top_bar_title">Ubicación Receta</string>
+    <string name="general_error_message">Algo salió mal</string>
+    <string name="retry_button_text">Reintentar</string>
+    <string name="empty_state_message_title">No encontramos recetas</string>
+    <string name="empty_state_message_description">Verifica que la palabra esté escrita correctamente.</string>
+    <string name="location_button_text">Ver ubicación</string>
+    <string name="description_text">Descripción</string>
+    <string name="ingredients_text">Ingredientes</string>
+    <string name="preparation_text">Preparación</string>
+</resources>

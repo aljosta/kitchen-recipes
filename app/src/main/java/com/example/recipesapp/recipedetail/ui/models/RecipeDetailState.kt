@@ -1,0 +1,9 @@
+package com.example.recipesapp.recipedetail.ui.models
+
+import com.example.recipesapp.home.ui.models.RecipeModel
+
+sealed class RecipeDetailState {
+    data class Success(val data: RecipeModel) : RecipeDetailState()
+    data class Error(var exception: Throwable) : RecipeDetailState()
+    object Loading : RecipeDetailState()
+}
