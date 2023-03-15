@@ -20,7 +20,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.example.recipesapp.R
 import com.example.recipesapp.home.ui.HomeViewModel
-import com.example.recipesapp.home.ui.models.RecipeListState
+import com.example.recipesapp.recipes.domain.models.RecipeListState
 import com.example.recipesapp.ui.view.TopBar
 
 @Composable

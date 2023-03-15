@@ -48,24 +48,3 @@ fun ErrorView(
         }
     }
 }
-
-@Composable
-fun ErrorSnackbarView(
-    onRetry: () -> Unit,
-) {
-    Box(
-        modifier = Modifier.fillMaxWidth(),
-        contentAlignment = Alignment.BottomCenter,
-    ) {
-        Snackbar(
-            action = {
-                Button(onClick = onRetry) {
-                    Text(text = stringResource(id = R.string.retry_button_text))
-                }
-            },
-            modifier = Modifier.padding(8.dp),
-        ) {
-            Text(text = stringResource(id = R.string.general_error_message))
-        }
-    }
-}

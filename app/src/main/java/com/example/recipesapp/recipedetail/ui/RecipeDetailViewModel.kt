@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.recipesapp.recipedetail.domain.usescases.GetRecipeDetailUseCase
 import com.example.recipesapp.recipedetail.ui.models.RecipeDetailState
-import com.example.recipesapp.home.ui.mapper.RecipeDtoToModelMapper
+import com.example.recipesapp.recipes.ui.mapper.RecipeDtoToModelMapper
 import com.example.recipesapp.ui.NavArgs
 import com.example.recipesapp.utils.value
 import dagger.hilt.android.lifecycle.HiltViewModel

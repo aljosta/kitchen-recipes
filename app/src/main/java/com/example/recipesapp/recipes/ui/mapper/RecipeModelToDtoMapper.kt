@@ -1,7 +1,7 @@
-package com.example.recipesapp.home.ui.mapper
+package com.example.recipesapp.recipes.ui.mapper
 
-import com.example.recipesapp.home.domain.models.RecipeDto
-import com.example.recipesapp.home.ui.models.RecipeModel
+import com.example.recipesapp.recipes.domain.models.RecipeDto
+import com.example.recipesapp.recipes.ui.models.RecipeModel
 
 object RecipeModelToDtoMapper {
     fun transform(recipe: RecipeModel) = with(recipe) {

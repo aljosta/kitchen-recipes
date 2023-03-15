@@ -1,8 +1,8 @@
 package com.example.recipesapp.recipedetail.domain.usescases
 
-import com.example.recipesapp.home.domain.RecipeRepository
-import com.example.recipesapp.home.domain.mapper.RecipeDataToDtoMapper
-import com.example.recipesapp.home.domain.models.RecipeDto
+import com.example.recipesapp.recipes.domain.RecipeRepository
+import com.example.recipesapp.recipes.domain.mapper.RecipeDataToDtoMapper
+import com.example.recipesapp.recipes.domain.models.RecipeDto
 import javax.inject.Inject
 
 class GetRecipeDetailUseCase @Inject constructor(

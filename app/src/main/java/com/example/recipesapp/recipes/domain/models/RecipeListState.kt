@@ -1,4 +1,6 @@
-package com.example.recipesapp.home.ui.models
+package com.example.recipesapp.recipes.domain.models
+
+import com.example.recipesapp.recipes.ui.models.RecipeModel
 
 sealed class RecipeListState {
     data class Success(val data: List<RecipeModel>) : RecipeListState()

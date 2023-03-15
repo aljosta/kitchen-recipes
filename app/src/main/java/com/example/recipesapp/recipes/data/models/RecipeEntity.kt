@@ -1,4 +1,4 @@
-package com.example.recipesapp.home.data.models
+package com.example.recipesapp.recipes.data.models
 
 data class RecipeEntity(
     val id: String? = null,

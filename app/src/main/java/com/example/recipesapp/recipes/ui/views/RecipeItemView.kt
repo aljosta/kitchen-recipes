@@ -11,7 +11,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import com.example.recipesapp.home.ui.models.RecipeModel
+import com.example.recipesapp.recipes.ui.models.RecipeModel
 import com.example.recipesapp.utils.Constants
 
 @Composable

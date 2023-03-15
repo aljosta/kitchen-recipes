@@ -1,6 +1,6 @@
-package com.example.recipesapp.home.domain
+package com.example.recipesapp.recipes.domain
 
-import com.example.recipesapp.home.data.models.RecipeEntity
+import com.example.recipesapp.recipes.data.models.RecipeEntity
 
 interface RecipeRepository {
     suspend fun getRecipeList(): List<RecipeEntity>

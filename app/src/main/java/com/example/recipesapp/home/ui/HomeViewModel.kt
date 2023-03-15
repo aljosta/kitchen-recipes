@@ -3,10 +3,10 @@ package com.example.recipesapp.home.ui
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.recipesapp.home.domain.usecases.FilterRecipesByKeywordUseCase
-import com.example.recipesapp.home.domain.usecases.GetAllRecipesUseCase
-import com.example.recipesapp.home.ui.mapper.RecipeDtoToModelMapper
-import com.example.recipesapp.home.ui.mapper.RecipeModelToDtoMapper
-import com.example.recipesapp.home.ui.models.RecipeListState
+import com.example.recipesapp.recipes.domain.usecases.GetAllRecipesUseCase
+import com.example.recipesapp.recipes.ui.mapper.RecipeDtoToModelMapper
+import com.example.recipesapp.recipes.ui.mapper.RecipeModelToDtoMapper
+import com.example.recipesapp.recipes.domain.models.RecipeListState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

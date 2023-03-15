@@ -1,7 +1,7 @@
-package com.example.recipesapp.home.domain.mapper
+package com.example.recipesapp.recipes.domain.mapper
 
-import com.example.recipesapp.home.data.models.RecipeEntity
-import com.example.recipesapp.home.domain.models.RecipeDto
+import com.example.recipesapp.recipes.data.models.RecipeEntity
+import com.example.recipesapp.recipes.domain.models.RecipeDto
 import com.example.recipesapp.utils.value
 
 object RecipeDataToDtoMapper {

@@ -23,7 +23,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
 import com.example.recipesapp.R
-import com.example.recipesapp.home.ui.models.RecipeModel
+import com.example.recipesapp.recipes.ui.models.RecipeModel
 import com.example.recipesapp.recipedetail.ui.RecipeDetailViewModel
 import com.example.recipesapp.recipedetail.ui.models.RecipeDetailState
 import com.example.recipesapp.ui.view.ErrorView

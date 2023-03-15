@@ -1,6 +1,6 @@
-package com.example.recipesapp.home.domain.models
+package com.example.recipesapp.recipes.ui.models
 
-data class RecipeDto(
+data class RecipeModel(
     val id: String,
     val title: String,
     val thumbnail: String,

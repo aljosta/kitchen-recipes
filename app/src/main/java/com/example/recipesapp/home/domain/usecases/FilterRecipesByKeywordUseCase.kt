@@ -1,6 +1,6 @@
 package com.example.recipesapp.home.domain.usecases
 
-import com.example.recipesapp.home.domain.models.RecipeDto
+import com.example.recipesapp.recipes.domain.models.RecipeDto
 import javax.inject.Inject
 
 class FilterRecipesByKeywordUseCase @Inject constructor() {

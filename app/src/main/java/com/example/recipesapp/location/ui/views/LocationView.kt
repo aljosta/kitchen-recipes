@@ -9,9 +9,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.recipesapp.R
-import com.example.recipesapp.location.ui.LocationViewModel
 import com.example.recipesapp.ui.view.TopBar
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
@@ -21,7 +19,6 @@ import com.google.maps.android.compose.*
 fun LocationView(
     location: List<Float>,
     navigateUp: () -> Unit,
-    viewModel: LocationViewModel = viewModel(),
 ) {
     val recipeMarker = LatLng(location[0].toDouble(), location[1].toDouble())
     val cameraPositionState = rememberCameraPositionState {
