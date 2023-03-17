@@ -28,7 +28,7 @@ fun HomeView(
     navigateToDetail: (String) -> Unit = {},
     viewModel: HomeViewModel = hiltViewModel(),
 ) {
-    val recipeListState by viewModel.recipeListState.collectAsStateWithLifecycle(
+    val recipeListState by viewModel.recipeListWithSearchState.collectAsStateWithLifecycle(
         initialValue = RecipeListState.Loading,
     )
     val searchTextValue by viewModel.searchText.collectAsStateWithLifecycle()

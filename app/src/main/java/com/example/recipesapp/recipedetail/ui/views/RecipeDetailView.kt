@@ -13,6 +13,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.ExperimentalTextApi
 import androidx.compose.ui.text.ParagraphStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.style.LineBreak
@@ -23,9 +24,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
 import com.example.recipesapp.R
-import com.example.recipesapp.recipes.ui.models.RecipeModel
 import com.example.recipesapp.recipedetail.ui.RecipeDetailViewModel
 import com.example.recipesapp.recipedetail.ui.models.RecipeDetailState
+import com.example.recipesapp.recipes.ui.models.RecipeModel
 import com.example.recipesapp.ui.view.ErrorView
 import com.example.recipesapp.ui.view.LoadingView
 import com.example.recipesapp.ui.view.TopBar
@@ -77,6 +78,7 @@ fun RecipeDetailView(
     }
 }
 
+@OptIn(ExperimentalTextApi::class)
 @Composable
 fun RecipeDetailView(
     recipeDetail: RecipeModel,
@@ -100,7 +102,7 @@ fun RecipeDetailView(
         )
         Button(
             onClick = { onMapButtonClick(recipeDetail.location) },
-            modifier = Modifier.padding(vertical = 15.dp)
+            modifier = Modifier.padding(vertical = 15.dp),
         ) {
             Row {
                 Icon(
