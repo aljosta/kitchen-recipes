@@ -1,4 +1,4 @@
-# App Búsqueda de Recetas
+# App de Recetas
 Esta es una aplicación que permite la consulta de recetas mediante un campo de búsqueda, listado de resultados, visualización del detalle de cada resultado encontrado y visualización de ubicación del origen de la receta.
 
 ## Funcionalidades
