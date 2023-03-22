@@ -1,9 +1,9 @@
 package com.example.recipesapp.home.ui
 
-import com.example.recipesapp.home.domain.usecases.FilterRecipesByKeywordUseCase
+import com.example.recipes.domain.usecases.FilterRecipesByKeywordUseCase
+import com.example.recipes.domain.usecases.GetAllRecipesUseCase
 import com.example.recipesapp.mocks.RecipeMocks
-import com.example.recipesapp.recipes.domain.models.RecipeListState
-import com.example.recipesapp.recipes.domain.usecases.GetAllRecipesUseCase
+import com.example.recipesapp.recipes.ui.models.RecipeListState
 import io.mockk.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi

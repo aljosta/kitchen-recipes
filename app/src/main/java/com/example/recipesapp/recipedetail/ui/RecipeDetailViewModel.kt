@@ -3,11 +3,11 @@ package com.example.recipesapp.recipedetail.ui
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.recipesapp.recipedetail.domain.usescases.GetRecipeDetailUseCase
+import com.example.core.utils.value
+import com.example.recipedetail.usescases.GetRecipeDetailUseCase
 import com.example.recipesapp.recipedetail.ui.models.RecipeDetailState
 import com.example.recipesapp.recipes.ui.mapper.RecipeDtoToModelMapper
 import com.example.recipesapp.ui.NavArgs
-import com.example.recipesapp.utils.value
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

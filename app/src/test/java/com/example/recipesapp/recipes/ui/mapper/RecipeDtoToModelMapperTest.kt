@@ -1,7 +1,6 @@
 package com.example.recipesapp.recipes.ui.mapper
 
 import com.example.recipesapp.mocks.RecipeMocks
-import com.example.recipesapp.recipes.domain.mapper.RecipeDataToDtoMapper
 import org.junit.Assert
 import org.junit.Test
 

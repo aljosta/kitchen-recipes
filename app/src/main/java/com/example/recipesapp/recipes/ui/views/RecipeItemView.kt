@@ -1,4 +1,4 @@
-package com.example.recipesapp.home.ui.views
+package com.example.recipesapp.recipes.ui.views
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -12,7 +12,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.example.recipesapp.recipes.ui.models.RecipeModel
-import com.example.recipesapp.utils.Constants
+import com.example.core.utils.Constants
 
 @Composable
 fun RecipeItemView(

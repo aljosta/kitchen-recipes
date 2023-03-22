@@ -30,7 +30,6 @@ import com.example.recipesapp.recipes.ui.models.RecipeModel
 import com.example.recipesapp.ui.view.ErrorView
 import com.example.recipesapp.ui.view.LoadingView
 import com.example.recipesapp.ui.view.TopBar
-import com.example.recipesapp.utils.Constants
 
 private const val TAG = "RecipeDetailView"
 private const val BULLET_STRING = "\u2022"
@@ -96,7 +95,7 @@ fun RecipeDetailView(
         )
         AsyncImage(
             model = recipeDetail.thumbnail,
-            contentDescription = Constants.EMPTY_STRING,
+            contentDescription = com.example.core.utils.Constants.EMPTY_STRING,
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.height(300.dp).fillMaxWidth(),
         )

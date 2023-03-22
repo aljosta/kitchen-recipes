@@ -2,11 +2,11 @@ package com.example.recipesapp.home.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.recipesapp.home.domain.usecases.FilterRecipesByKeywordUseCase
-import com.example.recipesapp.recipes.domain.models.RecipeListState
-import com.example.recipesapp.recipes.domain.usecases.GetAllRecipesUseCase
+import com.example.recipes.domain.usecases.FilterRecipesByKeywordUseCase
+import com.example.recipes.domain.usecases.GetAllRecipesUseCase
 import com.example.recipesapp.recipes.ui.mapper.RecipeDtoToModelMapper
 import com.example.recipesapp.recipes.ui.mapper.RecipeModelToDtoMapper
+import com.example.recipesapp.recipes.ui.models.RecipeListState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -21,7 +21,9 @@ class HomeViewModel @Inject constructor(
     private val _searchText = MutableStateFlow("")
     val searchText = _searchText.asStateFlow()
 
-    private var _recipeListState = MutableStateFlow<RecipeListState>(RecipeListState.Loading)
+    private var _recipeListState = MutableStateFlow<RecipeListState>(
+        RecipeListState.Loading,
+    )
     val recipeListState = _recipeListState.asStateFlow()
 
     val recipeListWithSearchState = searchText.combine(recipeListState) { text, currentListState ->

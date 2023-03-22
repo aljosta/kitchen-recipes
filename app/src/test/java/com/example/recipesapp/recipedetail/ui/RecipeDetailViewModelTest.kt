@@ -3,7 +3,7 @@ package com.example.recipesapp.recipedetail.ui
 import androidx.lifecycle.SavedStateHandle
 import com.example.recipesapp.mocks.RecipeMocks
 import com.example.recipesapp.mocks.RecipeMocks.DEFAULT_RECIPE_ID
-import com.example.recipesapp.recipedetail.domain.usescases.GetRecipeDetailUseCase
+import com.example.recipedetail.usescases.GetRecipeDetailUseCase
 import com.example.recipesapp.recipedetail.ui.models.RecipeDetailState
 import com.example.recipesapp.ui.NavArgs
 import io.mockk.*

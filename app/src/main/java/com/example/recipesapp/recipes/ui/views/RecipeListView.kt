@@ -1,11 +1,11 @@
-package com.example.recipesapp.home.ui.views
+package com.example.recipesapp.recipes.ui.views
 
 import android.util.Log
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.example.recipesapp.recipes.domain.models.RecipeListState
+import com.example.recipesapp.recipes.ui.models.RecipeListState
 import com.example.recipesapp.recipes.ui.models.RecipeModel
 import com.example.recipesapp.ui.view.ErrorView
 import com.example.recipesapp.ui.view.LoadingView

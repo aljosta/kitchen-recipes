@@ -8,11 +8,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.core.utils.Constants
+import com.example.core.utils.value
 import com.example.recipesapp.home.ui.views.HomeView
 import com.example.recipesapp.location.ui.views.LocationView
 import com.example.recipesapp.recipedetail.ui.views.RecipeDetailView
-import com.example.recipesapp.utils.Constants
-import com.example.recipesapp.utils.value
 
 sealed class Screen(val route: String) {
     object Home : Screen("home")
