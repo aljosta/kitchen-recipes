@@ -1,12 +1,12 @@
 package com.example.recipedetail.mocks
 
-import com.example.recipes.data.models.RecipeEntity
-import com.example.recipes.domain.models.RecipeDto
+import com.example.recipedetail.data.models.RecipeDetailEntity
+import com.example.recipedetail.domain.models.RecipeDetailDto
 
 object RecipeDetailMocks {
     const val DEFAULT_RECIPE_ID = "productId"
 
-    fun getRecipeDto() = RecipeDto(
+    fun getRecipeDetailDto() = RecipeDetailDto(
         id = "1",
         title = "title 1",
         thumbnail = "thumbnail/1.webp",
@@ -16,7 +16,7 @@ object RecipeDetailMocks {
         location = listOf(1.0, 2.0),
     )
 
-    fun getRecipeEntity() = RecipeEntity(
+    fun getRecipeDetailEntity() = RecipeDetailEntity(
         id = "1",
         title = "title 1",
         thumbnail = "thumbnail/1.webp",

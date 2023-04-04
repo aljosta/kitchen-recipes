@@ -4,5 +4,4 @@ import com.example.recipes.data.models.RecipeEntity
 
 interface RecipeRepository {
     suspend fun getRecipeList(): List<RecipeEntity>
-    suspend fun getRecipeDetail(recipeId: String): RecipeEntity
 }

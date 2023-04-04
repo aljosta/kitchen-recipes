@@ -9,10 +9,7 @@ object RecipeModelToDtoMapper {
             id = id,
             title = title,
             thumbnail = thumbnail,
-            description = description,
-            preparation = preparation,
             ingredients = ingredients,
-            location = location,
         )
     }
 }

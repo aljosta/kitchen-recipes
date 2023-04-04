@@ -3,7 +3,6 @@ package com.example.recipes.data.repositories
 import com.example.recipes.data.datasources.RecipeRemoteDataSource
 import com.example.recipes.domain.RecipeRepository
 import com.example.recipes.mocks.RecipesMocks
-import com.example.recipes.mocks.RecipesMocks.DEFAULT_RECIPE_ID
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
@@ -21,11 +20,11 @@ class RecipeDataRepositoryTest {
 
     private val remoteDataSource = mockk<RecipeRemoteDataSource>()
 
-    private lateinit var productRepository: RecipeRepository
+    private lateinit var recipeRepository: RecipeRepository
 
     @Before
     fun setup() {
-        productRepository =
+        recipeRepository =
             RecipeDataRepository(remoteDataSource)
     }
 
@@ -37,7 +36,7 @@ class RecipeDataRepositoryTest {
             remoteDataSource.getRecipeList()
         } returns Response.success(responseMock)
 
-        val response = productRepository.getRecipeList()
+        val response = recipeRepository.getRecipeList()
 
         coVerify { remoteDataSource.getRecipeList() }
 
@@ -51,39 +50,7 @@ class RecipeDataRepositoryTest {
         } returns Response.error(404, "".toResponseBody())
 
         try {
-            productRepository.getRecipeList()
-        } catch (ex: Throwable) {
-            assert(ex is Exception)
-        }
-    }
-
-    @Test
-    fun `Test get recipe by id successful`() = runTest {
-        val responseMock = RecipesMocks.getRecipeEntity()
-
-        coEvery {
-            remoteDataSource.getRecipeById(DEFAULT_RECIPE_ID)
-        } returns Response.success(responseMock)
-
-        val response = productRepository.getRecipeDetail(DEFAULT_RECIPE_ID)
-
-        coVerify { remoteDataSource.getRecipeById(DEFAULT_RECIPE_ID) }
-
-        assertEquals(responseMock.id, response.id)
-        assertEquals(responseMock.title, response.title)
-        assertEquals(responseMock.thumbnail, response.thumbnail)
-    }
-
-    @Test
-    fun `Test get recipe by id failed`() = runTest {
-        val recipeId = "1"
-
-        coEvery {
-            remoteDataSource.getRecipeById(recipeId)
-        } returns Response.error(404, "".toResponseBody())
-
-        try {
-            productRepository.getRecipeDetail(recipeId)
+            recipeRepository.getRecipeList()
         } catch (ex: Throwable) {
             assert(ex is Exception)
         }

@@ -28,10 +28,7 @@ class FilterRecipeByKeywordUseCaseTest {
             Assert.assertEquals(expectedFilteredRecipeDto.id, filteredRecipeDto.id)
             Assert.assertEquals(expectedFilteredRecipeDto.title, filteredRecipeDto.title)
             Assert.assertEquals(expectedFilteredRecipeDto.thumbnail, filteredRecipeDto.thumbnail)
-            Assert.assertEquals(expectedFilteredRecipeDto.description, filteredRecipeDto.description)
             Assert.assertEquals(expectedFilteredRecipeDto.ingredients, filteredRecipeDto.ingredients)
-            Assert.assertEquals(expectedFilteredRecipeDto.preparation, filteredRecipeDto.preparation)
-            Assert.assertEquals(expectedFilteredRecipeDto.location, filteredRecipeDto.location)
         }
     }
 }

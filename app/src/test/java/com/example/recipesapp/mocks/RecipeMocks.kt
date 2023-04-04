@@ -1,6 +1,8 @@
 package com.example.recipesapp.mocks
 
+import com.example.recipedetail.domain.models.RecipeDetailDto
 import com.example.recipes.domain.models.RecipeDto
+import com.example.recipesapp.recipedetail.ui.models.RecipeDetailModel
 import com.example.recipesapp.recipes.ui.models.RecipeModel
 
 object RecipeMocks {
@@ -12,32 +14,30 @@ object RecipeMocks {
             id = "2",
             title = "title 2",
             thumbnail = "thumbnail/2.webp",
-            description = "description 2",
             ingredients = "ingredients 2",
-            preparation = "preparation 2",
-            location = listOf(1.0, 2.0),
         ),
         RecipeDto(
             id = "3",
             title = "title recipe 3",
             thumbnail = "thumbnail/3.webp",
-            description = "description 3",
             ingredients = "ingredients 3",
-            preparation = "preparation 3",
-            location = listOf(1.0, 2.0),
         ),
         RecipeDto(
             id = "4",
             title = "title 4",
             thumbnail = "thumbnail/4.webp",
-            description = "description 4",
             ingredients = "ingredients 4",
-            preparation = "preparation 4",
-            location = listOf(1.0, 2.0),
         ),
     )
 
     fun getRecipeDto() = RecipeDto(
+        id = "1",
+        title = "title 1",
+        thumbnail = "thumbnail/1.webp",
+        ingredients = "ingredients 1",
+    )
+
+    fun getRecipeDetailDto() = RecipeDetailDto(
         id = "1",
         title = "title 1",
         thumbnail = "thumbnail/1.webp",
@@ -53,32 +53,30 @@ object RecipeMocks {
             id = "2",
             title = "title 2",
             thumbnail = "thumbnail/2.webp",
-            description = "description 2",
             ingredients = "ingredients 2",
-            preparation = "preparation 2",
-            location = listOf(1.0, 2.0),
         ),
         RecipeModel(
             id = "3",
             title = "title recipe 3",
             thumbnail = "thumbnail/3.webp",
-            description = "description 3",
             ingredients = "ingredients 3",
-            preparation = "preparation 3",
-            location = listOf(1.0, 2.0),
         ),
         RecipeModel(
             id = "4",
             title = "title 4",
             thumbnail = "thumbnail/4.webp",
-            description = "description 4",
             ingredients = "ingredients 4",
-            preparation = "preparation 4",
-            location = listOf(1.0, 2.0),
         ),
     )
 
     fun getRecipeModel() = RecipeModel(
+        id = "1",
+        title = "title 1",
+        thumbnail = "thumbnail/1.webp",
+        ingredients = "ingredients 1",
+    )
+
+    fun getRecipeDetailModel() = RecipeDetailModel(
         id = "1",
         title = "title 1",
         thumbnail = "thumbnail/1.webp",

@@ -51,11 +51,8 @@ fun PreviewRecipeItemView() {
         recipeModel = RecipeModel(
             id = "10",
             title = "Sopa de lentejas",
-            description = "jsahjdhasj",
             thumbnail = "",
             ingredients = "",
-            preparation = "",
-            location = listOf(),
         ),
         onItemClick = {},
     )

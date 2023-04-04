@@ -25,8 +25,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
 import com.example.recipesapp.R
 import com.example.recipesapp.recipedetail.ui.RecipeDetailViewModel
+import com.example.recipesapp.recipedetail.ui.models.RecipeDetailModel
 import com.example.recipesapp.recipedetail.ui.models.RecipeDetailState
-import com.example.recipesapp.recipes.ui.models.RecipeModel
 import com.example.recipesapp.ui.view.ErrorView
 import com.example.recipesapp.ui.view.LoadingView
 import com.example.recipesapp.ui.view.TopBar
@@ -80,7 +80,7 @@ fun RecipeDetailView(
 @OptIn(ExperimentalTextApi::class)
 @Composable
 fun RecipeDetailView(
-    recipeDetail: RecipeModel,
+    recipeDetail: RecipeDetailModel,
     onMapButtonClick: (List<Double>) -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -167,7 +167,7 @@ fun RecipeDetailView(
 @Composable
 fun PreviewRecipeDetailView() {
     RecipeDetailView(
-        recipeDetail = RecipeModel(
+        recipeDetail = RecipeDetailModel(
             id = "10",
             title = "Sopa de lentejas",
             description = "jsahjdhasj",

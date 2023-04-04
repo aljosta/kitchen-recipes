@@ -1,9 +1,9 @@
-package com.example.recipedetail.usecases
+package com.example.recipedetail.domain.usecases
 
+import com.example.recipedetail.domain.RecipeDetailRepository
 import com.example.recipedetail.mocks.RecipeDetailMocks
 import com.example.recipedetail.mocks.RecipeDetailMocks.DEFAULT_RECIPE_ID
-import com.example.recipedetail.usescases.GetRecipeDetailUseCase
-import com.example.recipes.domain.RecipeRepository
+import com.example.recipedetail.domain.usescases.GetRecipeDetailUseCase
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk
@@ -16,7 +16,7 @@ import org.junit.Test
 @OptIn(ExperimentalCoroutinesApi::class)
 class GetRecipeDetailUseCaseTest {
 
-    private val recipeRepository = mockk<RecipeRepository>()
+    private val recipeRepository = mockk<RecipeDetailRepository>()
 
     private lateinit var useCase: GetRecipeDetailUseCase
 
@@ -27,9 +27,11 @@ class GetRecipeDetailUseCaseTest {
 
     @Test
     fun `Test get all recipes use case successful`() = runTest {
-        val expectedRecipeDto = RecipeDetailMocks.getRecipeDto()
+        val expectedRecipeDto = RecipeDetailMocks.getRecipeDetailDto()
 
-        coEvery { recipeRepository.getRecipeDetail(DEFAULT_RECIPE_ID) } returns RecipeDetailMocks.getRecipeEntity()
+        coEvery {
+            recipeRepository.getRecipeDetail(DEFAULT_RECIPE_ID)
+        } returns RecipeDetailMocks.getRecipeDetailEntity()
 
         useCase.execute(DEFAULT_RECIPE_ID).let { recipeDto ->
             Assert.assertEquals(expectedRecipeDto.id, recipeDto.id)

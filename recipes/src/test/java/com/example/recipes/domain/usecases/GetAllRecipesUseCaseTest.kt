@@ -32,10 +32,7 @@ class GetAllRecipesUseCaseTest {
             assertEquals(expectedRecipeDto.id, recipeDto.id)
             assertEquals(expectedRecipeDto.title, recipeDto.title)
             assertEquals(expectedRecipeDto.thumbnail, recipeDto.thumbnail)
-            assertEquals(expectedRecipeDto.description, recipeDto.description)
             assertEquals(expectedRecipeDto.ingredients, recipeDto.ingredients)
-            assertEquals(expectedRecipeDto.preparation, recipeDto.preparation)
-            assertEquals(expectedRecipeDto.location, recipeDto.location)
         }
 
         coVerify { recipeRepository.getRecipeList() }

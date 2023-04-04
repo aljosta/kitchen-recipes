@@ -15,10 +15,7 @@ class RecipeDataToDtoMapperTest {
             assertEquals(id, recipeDto.id)
             assertEquals(title, recipeDto.title)
             assertEquals(thumbnail, recipeDto.thumbnail)
-            assertEquals(description, recipeDto.description)
             assertEquals(ingredients, recipeDto.ingredients)
-            assertEquals(preparation, recipeDto.preparation)
-            assertEquals(location, recipeDto.location)
         }
     }
 }

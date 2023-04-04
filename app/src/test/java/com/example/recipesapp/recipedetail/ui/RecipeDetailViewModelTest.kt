@@ -1,9 +1,9 @@
 package com.example.recipesapp.recipedetail.ui
 
 import androidx.lifecycle.SavedStateHandle
+import com.example.recipedetail.domain.usescases.GetRecipeDetailUseCase
 import com.example.recipesapp.mocks.RecipeMocks
 import com.example.recipesapp.mocks.RecipeMocks.DEFAULT_RECIPE_ID
-import com.example.recipedetail.usescases.GetRecipeDetailUseCase
 import com.example.recipesapp.recipedetail.ui.models.RecipeDetailState
 import com.example.recipesapp.ui.NavArgs
 import io.mockk.*
@@ -38,13 +38,13 @@ class RecipeDetailViewModelTest {
     fun `Test get recipe detail successful`() = runTest {
         coEvery {
             useCase.execute(DEFAULT_RECIPE_ID)
-        } returns RecipeMocks.getRecipeDto()
+        } returns RecipeMocks.getRecipeDetailDto()
 
         viewModel = RecipeDetailViewModel(useCase, savedStateHandle)
 
         coVerify { useCase.execute(DEFAULT_RECIPE_ID) }
         assertEquals(
-            RecipeDetailState.Success(RecipeMocks.getRecipeModel()),
+            RecipeDetailState.Success(RecipeMocks.getRecipeDetailModel()),
             viewModel.recipeDetailState.value,
         )
     }

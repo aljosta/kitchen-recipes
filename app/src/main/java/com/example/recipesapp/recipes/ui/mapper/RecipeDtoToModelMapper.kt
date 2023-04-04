@@ -4,15 +4,12 @@ import com.example.recipes.domain.models.RecipeDto
 import com.example.recipesapp.recipes.ui.models.RecipeModel
 
 object RecipeDtoToModelMapper {
-    fun transform(product: RecipeDto) = with(product) {
+    fun transform(recipe: RecipeDto) = with(recipe) {
         RecipeModel(
             id = id,
             title = title,
             thumbnail = thumbnail,
-            description = description,
-            preparation = preparation,
             ingredients = ingredients,
-            location = location,
         )
     }
 }
